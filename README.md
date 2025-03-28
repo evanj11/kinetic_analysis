@@ -1,5 +1,5 @@
 # kinetic_analysis
-Read kinetic fluorescence data from csv and output either MM or Hill graph
+Read kinetic fluorescence data from csv and output either MM or Hill graph (get_kinetic_parameters.py only outputs kinetic parameters (Hill coefficient, Vmax value, Km value) to text file)
 
 python gen_graphs.py -f "/path/to/kinetic/data" -w/--wells {first well to read data} {last well to read data} -s/--substrate {number of substrate concentrations} {dilution factor} {first substrate concentration} --output {file name for output graphs}
 
@@ -10,3 +10,5 @@ Can read data fitting both Hill and Michelis-Menten kinetics
 
 EXAMPLE:
 python gen_graphs.py -f "/path/to/kinetic/data" -w 3 23 -s 20 1.5 80 -o "hillplot"
+
+get_kinetic_parameters.py works the same way
